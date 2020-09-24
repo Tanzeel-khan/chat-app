@@ -87,4 +87,28 @@ font-weight: 400;
     clear: both;
     display: table;
   }
-  
+  .del{
+      float: right;
+  }
+  .log{
+      float: right;
+      margin-top: -48px;
+  }
+  @media only screen and (max-width: 767px) {
+    .message {
+        height: 48px;
+        width: 235px;
+        border-radius: 12px;
+        color: lightslategrey;
+    }
+    .head1 {
+        font-weight: bolder;
+        font-size: 19px;
+        margin-top: 10px;
+        margin-left: -100px;
+    }
+    .log {
+        float: right;
+        margin-top: -38px;
+    }
+}

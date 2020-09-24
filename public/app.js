@@ -1,3 +1,6 @@
+let user = document.getElementById("username");
+window.localStorage.setItem(1,user.value);
+
 let signup = () =>{
     let email = document.getElementById("username")
     let pass = document.getElementById("password")

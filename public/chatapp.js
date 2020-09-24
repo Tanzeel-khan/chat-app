@@ -12,11 +12,11 @@ firebase.database().ref("messages").on("child_added",function(snapshot){
     let html = "";
     html += "<li id='message-"+snapshot.key+"' class='mylist mycontainer'>";
     if(snapshot.val().sender == myname){
-        html += "<button data-id  = '"+snapshot.key+"' onclick= 'deleteMessage(this);'>";
+        html += "<button data-id  = '"+snapshot.key+"' class = 'del btn btn-danger' onclick= 'deleteMessage(this);'>";
         html += "Delete";
         html += "</button>";
     }
-    html += snapshot.val().sender + ":" + snapshot.val().message ;
+    html += snapshot.val().sender + " : " + snapshot.val().message ;
     html += "</li>";
     document.getElementById("messages").innerHTML += html;
 });
@@ -27,3 +27,7 @@ let deleteMessage = (self) =>{
 firebase.database().ref("messages").on("child_removed",function(snapshot){
     document.getElementById("message-"+snapshot.key).innerHTML="This message was deleted";
 });
+
+let logout = () =>{
+    window.location.replace("index.html");
+}
