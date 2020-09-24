@@ -29,16 +29,16 @@
     <div class="container">
         <h1 class="text-center head1">Welcome To ChitChat</h1>
         <div class="row">
-            <div class="chroom rounded border border-primary">
-                <!-- <div class="bottom">
-              <button class="btn btn-primary">Send</button>
-                </div> -->
-                <form onsubmit="return sendMessage();">
-                    <input id="messaage" type="text" placeholder="type your message" class="message"> <input type="submit">
-                    
-                </form>
+            <div class="chroom rounded ">
                 <ul id="messages"></ul>
-            </div>
+                </div>
+                <form class="frm" onsubmit="return sendMessage();">
+                    <div class="text-center pt-2 in">
+                    <input id="messaage" type="text" placeholder="type your message" class="message"> <input type="submit" class=" btn btn-primary">
+                    </div>
+                </form>
+              
+          
         </div>
     </div>
     <script src="./bootstrap/js/bootstrap.min.js"></script>

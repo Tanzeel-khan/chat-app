@@ -26,8 +26,8 @@ font-weight: 400;
 .chroom{
     background: linear-gradient(to top,white,blue);
     width: -webkit-fill-available;
-    height: 500px;
-    margin-top: 20px;
+    height: 460px;
+    margin-top: 15px;
     overflow-y: scroll;
 }
 .head1{
@@ -39,12 +39,52 @@ font-weight: 400;
     margin-top: 468px;
 }
 .message{
-    width: 1120px;
+    height: 48px;
+    width: 650px;
+    border-radius: 12px;
+    color: lightslategrey;
+}
+.message ::placeholder{
+    font-size: medium !important;
+    margin-left: 10px !important;
+}
+.sub{
+    margin-left: -10px;
 }
 .btn-primary{
-    margin-left: -120px;
-    width: 120px;
+   
+    /* width: 120px; */
+}
+.frm{
+    margin-left: auto;
+    margin-right: auto;
+    width: -webkit-fill-available;
 }
 .mylist{
     list-style: none;
 }
+.in{
+    background-color: white;
+    border-radius: 12px;
+}
+.mycontainer {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 20px 23px -20px;
+  }
+  
+  /* Darker chat container */
+  .darker {
+    border-color: #ccc;
+    background-color: #ddd;
+  }
+  
+  /* Clear floats */
+  .mycontainer::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  

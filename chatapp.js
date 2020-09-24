@@ -10,7 +10,7 @@ let sendMessage = () =>{
 }
 firebase.database().ref("messages").on("child_added",function(snapshot){
     let html = "";
-    html += "<li id='message-"+snapshot.key+"' class='mylist'>";
+    html += "<li id='message-"+snapshot.key+"' class='mylist mycontainer'>";
     if(snapshot.val().sender == myname){
         html += "<button data-id  = '"+snapshot.key+"' onclick= 'deleteMessage(this);'>";
         html += "Delete";
