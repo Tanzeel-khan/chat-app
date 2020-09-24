@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChitChat</title>
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css" >
+    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyBW88nIDn7AMOUN-Q1nRj1RvlY_aGHcAWo",
+          authDomain: "chat-app-85ee0.firebaseapp.com",
+          databaseURL: "https://chat-app-85ee0.firebaseio.com",
+          projectId: "chat-app-85ee0",
+          storageBucket: "chat-app-85ee0.appspot.com",
+          messagingSenderId: "210023552535",
+          appId: "1:210023552535:web:86013ab4e26f2aea8dae52",
+          measurementId: "G-SEKY0J6PRD"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+      </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center head1">Welcome To ChitChat</h1>
+        <div class="row">
+            <div class="chroom rounded border border-primary">
+                <!-- <div class="bottom">
+              <button class="btn btn-primary">Send</button>
+                </div> -->
+                <form onsubmit="return sendMessage();">
+                    <input id="messaage" type="text" placeholder="type your message" class="message"> <input type="submit">
+                    
+                </form>
+                <ul id="messages"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./chatapp.js"></script>
+</body>
+</html>

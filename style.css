@@ -1,0 +1,50 @@
+body{
+    background: url(./assets/chat-bg.jpg) !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.fb{
+background-color: #4267b2;
+color: white;
+width: -webkit-fill-available;
+height: 30px;
+}
+.google{
+background-color :red;
+color: white;
+width: -webkit-fill-available;
+height: 30px;
+}
+.fa-facebook-official{
+margin-right: 10px;
+font-weight: 400;
+}
+.fa-google-plus{
+    margin-right: 10px;
+font-weight: 400;
+}
+.chroom{
+    background: linear-gradient(to top,white,blue);
+    width: -webkit-fill-available;
+    height: 500px;
+    margin-top: 20px;
+    overflow-y: scroll;
+}
+.head1{
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top: 10px;
+}
+.bottom{
+    margin-top: 468px;
+}
+.message{
+    width: 1120px;
+}
+.btn-primary{
+    margin-left: -120px;
+    width: 120px;
+}
+.mylist{
+    list-style: none;
+}
